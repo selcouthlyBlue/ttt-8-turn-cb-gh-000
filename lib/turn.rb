@@ -16,7 +16,7 @@ def input_to_index(number)
 end
 
 def valid_move?(board, index)
-  return !invalid_position?(board, index) && !position_taken?(board, index)
+  return (!invalid_position?(board, index) && !position_taken?(board, index))
 end
 
 def invalid_position?(board, index)
