@@ -3,3 +3,4 @@
 require_relative '../lib/turn.rb'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 display_board(board)
+index = input_to_index(gets.strip)
