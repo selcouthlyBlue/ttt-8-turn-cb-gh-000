@@ -16,14 +16,14 @@ def input_to_index(number)
 end
 
 def valid_move?(board, index)
-  return (!invalid_position?(board, index) && !position_taken?(board, index))
-end
-
-def invalid_position?(board, index)
-  return !(index.between?(0, board.length))
+  if index.between(0, board.length) && !position_taken?(board, index)
+    return true
+  return false 
 end
 
 def position_taken?(board, index)
   status = board[index]
-  return !status || status == " " || status == ""
+  if !status || status == " " || status == ""
+    return false
+  return true
 end
