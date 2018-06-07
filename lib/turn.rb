@@ -1,4 +1,5 @@
 def display_board(board, divider="-----------")
+  puts divider
   display_row(board, 0)
   puts divider
   display_row(board, 1)
