@@ -25,5 +25,5 @@ end
 
 def position_taken?(board, index)
   status = board[index]
-  return !status || status == " " || status == ""
+  return !(!status || status == " " || status == "")
 end
