@@ -14,3 +14,7 @@ end
 def input_to_index(number)
   return number.to_i - 1
 end
+
+def valid_move?(board, index)
+  
+end
