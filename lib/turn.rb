@@ -20,7 +20,7 @@ def valid_move?(board, index)
 end
 
 def invalid_position?(board, index)
-  return index.between?(0, board.length)
+  return !index.between?(0, board.length)
 end
 
 def position_taken?(board, index)
