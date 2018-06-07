@@ -2,3 +2,4 @@
 
 require_relative '../lib/turn.rb'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+display_board(board)
