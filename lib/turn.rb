@@ -27,3 +27,7 @@ def position_taken?(board, index)
   status = board[index]
   return !(!status || status == " " || status == "")
 end
+
+def move(board, index, char="X")
+  
+end
