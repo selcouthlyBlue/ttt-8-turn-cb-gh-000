@@ -41,4 +41,5 @@ def turn(board)
   else
     number = gets.strip
     index = input_to_index(number)
+  end
 end
