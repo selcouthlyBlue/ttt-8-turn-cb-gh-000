@@ -22,6 +22,10 @@ def valid_move?(board, index)
   return false
 end
 
+def invalid_position(board, index)
+  return !index.between?(0, board.length)
+end
+
 def position_taken?(board, index)
   status = board[index]
   if !status || status == " " || status == ""
